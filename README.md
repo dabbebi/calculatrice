@@ -1,1 +1,39 @@
-# calculatrice
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sources.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><u>:: Calculatrice ::</u></h1>
+    <form>
+        <input class="resultat" type="text" id="result" value="0"><br><br>
+        <input class="bouton" type="button" value="1" id="b1" onclick="ecrire(1)">
+        <input class="bouton" type="button" value="2" id="b2" onclick="ecrire(2)">
+        <input class="bouton" type="button" value="3" id="b3" onclick="ecrire(3)">
+        <input class="bouton" type="button" value="/" id="bd" onclick="calculer('/')"><br><br>
+        <input class="bouton" type="button" value="4" id="b4" onclick="ecrire(4)">
+        <input class="bouton" type="button" value="5" id="b5" onclick="ecrire(5)">
+        <input class="bouton" type="button" value="6" id="b6" onclick="ecrire(6)">
+        <input class="bouton" type="button" value="*" id="bf" onclick="calculer('*')"><br><br>
+        <input class="bouton" type="button" value="7" id="b7" onclick="ecrire(7)">
+        <input class="bouton" type="button" value="8" id="b8" onclick="ecrire(8)">
+        <input class="bouton" type="button" value="9" id="b9" onclick="ecrire(9)">
+        <input class="bouton" type="button" value="-" id="bm" onclick="calculer('-')"><br><br>
+        <input class="bouton" type="button" value="<-" id="bdel" onclick="del()">
+        <input class="bouton" type="button" value="0" id="b0" onclick="ecrire(0)">
+        <input class="bouton" type="button" value="+" id="bp" onclick="calculer('+')">
+        <input class="bouton" type="button" value="=" id="be" onclick="calculer('=')"><br><br>
+        <input class="bouton" type="button" value="CE" id="bdel" onclick="ce()">
+        <input class="bouton" type="button" value="+|-" id="b0" onclick="invsigne()">
+        <input class="bouton" type="button" value="," id="bp" onclick="virgule()">
+        <input class="bouton" type="button" value="%" id="be" onclick="calculer('%')"><br><br>
+    </form>
+</body>
+
+</html>
